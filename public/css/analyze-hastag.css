@@ -1,0 +1,818 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.div {
+    position: relative;
+    line-height: 120%;
+}
+
+.wrapper {
+    width: 54.5px;
+    border-radius: 8.02px 0px 0px 8.02px;
+    background-color: #3a2222;
+    height: 71.4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    box-sizing: border-box;
+}
+
+.makansiang {
+    width: 275px;
+    position: relative;
+    font-size: 14.43px;
+    line-height: 120%;
+    color: #3a2222;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.arrow-outward-icon {
+    width: 19.2px;
+    position: relative;
+    height: 19.2px;
+}
+
+.east {
+    width: 33.7px;
+    border-radius: 4.81px;
+    background-color: #ff5256;
+    height: 42.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 1.6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animasi transisi saat hover */
+}
+
+/* Efek hover */
+.east:hover {
+    background-color: #e04f50; /* Warna saat di-hover */
+}
+.frame-parent {
+    position: absolute;
+    top: 49px;
+    left: 49px;
+    border-radius: 8.02px;
+    background-color: #fff;
+    width: 409px;
+    height: 71.4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 16px 0px 0px;
+    box-sizing: border-box;
+    gap: 16px;
+    text-align: center;
+    font-size: 25.66px;
+    color: #fff;
+}
+
+.save-report-wrapper {
+    position: absolute;
+    top: 77.07px;
+    left: 1283.09px;
+    box-shadow: 0px 3.207517385482788px 12.83px rgba(255, 82, 86, 0.32);
+    border-radius: 4.81px;
+    background-color: #ff5256;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14.4px;
+    font-size: 14.43px;
+    color: #fff;
+    font-family: 'Product Sans Medium';
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.save-report-wrapper:hover {
+    background-color: #e04f50;
+    box-shadow: 0px 6px 20px rgba(255, 82, 86, 0.5);
+}
+
+.hastag-analyzer-child {
+    position: absolute;
+    top: 654px;
+    left: 49px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 1337px;
+    height: 695px;
+}
+
+.hastag-analyzer-item {
+    position: absolute;
+    top: 165px;
+    left: 49px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 1337px;
+    height: 438px;
+}
+
+.hastag-analyzer-inner {
+    position: absolute;
+    top: 338px;
+    left: 49px;
+    background-color: rgba(217, 217, 217, 0.4);
+    width: 1337px;
+    height: 44px;
+}
+
+.rectangle-div {
+    position: absolute;
+    top: 423px;
+    left: 49px;
+    background-color: rgba(217, 217, 217, 0.4);
+    width: 1337px;
+    height: 44px;
+}
+
+.hastag-analyzer-child1 {
+    position: absolute;
+    top: 508px;
+    left: 49px;
+    background-color: rgba(217, 217, 217, 0.4);
+    width: 1337px;
+    height: 44px;
+}
+
+.hashtag-makansiang-terkait {
+    position: relative;
+}
+
+.hashtag-makansiang-terkait-di-wrapper {
+    position: absolute;
+    top: 165px;
+    left: 49px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #d9d9d9;
+    border-bottom: 6px solid #ff5256;
+    box-sizing: border-box;
+    width: 1337px;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 27px;
+    font-size: 24px;
+}
+
+.makansiang1 {
+    color: #ff5256;
+}
+
+.postingan-terpopuler-dengan-ha-wrapper {
+    position: absolute;
+    top: 654px;
+    left: 49px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #d9d9d9;
+    border-bottom: 6px solid #ff5256;
+    box-sizing: border-box;
+    width: 1337px;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 27px;
+    font-size: 24px;
+}
+
+.hashtag-yang-direkomendasikan {
+    position: absolute;
+    top: 258px;
+    left: 76px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.32);
+}
+
+.makansiang2 {
+    position: absolute;
+    top: 308px;
+    left: 76px;
+    color: #ff5256;
+}
+
+.makansiangenak {
+    position: absolute;
+    top: 351px;
+    left: 76px;
+    color: #ff5256;
+}
+
+.makansiangkantor {
+    position: absolute;
+    top: 393px;
+    left: 76px;
+    color: #ff5256;
+}
+
+.makansiangrumahan {
+    position: absolute;
+    top: 436px;
+    left: 76px;
+    color: #ff5256;
+}
+
+.makansiangsemarang {
+    position: absolute;
+    top: 478px;
+    left: 76px;
+    color: #ff5256;
+}
+
+.makansiangbersama {
+    position: absolute;
+    top: 520px;
+    left: 76px;
+    color: #ff5256;
+}
+
+.makansianganak {
+    position: absolute;
+    top: 563px;
+    left: 76px;
+    color: #ff5256;
+}
+
+.makansiangsehat {
+    position: absolute;
+    top: 308px;
+    left: 526px;
+    color: #ff5256;
+}
+
+.makansianghariini {
+    position: absolute;
+    top: 351px;
+    left: 526px;
+    color: #ff5256;
+}
+
+.makansiangjogja {
+    position: absolute;
+    top: 393px;
+    left: 526px;
+    color: #ff5256;
+}
+
+.makansianggratis {
+    position: absolute;
+    top: 436px;
+    left: 526px;
+    color: #ff5256;
+}
+
+.makansiangjsr {
+    position: absolute;
+    top: 478px;
+    left: 526px;
+    color: #ff5256;
+}
+
+.makansiangbareng {
+    position: absolute;
+    top: 520px;
+    left: 526px;
+    color: #ff5256;
+}
+
+.makansiangsolo {
+    position: absolute;
+    top: 563px;
+    left: 526px;
+    color: #ff5256;
+}
+
+.makansiangku {
+    position: absolute;
+    top: 308px;
+    left: 984px;
+    color: #ff5256;
+}
+
+.makansiangmurah {
+    position: absolute;
+    top: 351px;
+    left: 984px;
+    color: #ff5256;
+}
+
+.makansiangmedan {
+    position: absolute;
+    top: 393px;
+    left: 984px;
+    color: #ff5256;
+}
+
+.makansiangdiet {
+    position: absolute;
+    top: 436px;
+    left: 984px;
+    color: #ff5256;
+}
+
+.makansiangdebm {
+    position: absolute;
+    top: 478px;
+    left: 984px;
+    color: #ff5256;
+}
+
+.makansiangsurabaya {
+    position: absolute;
+    top: 520px;
+    left: 984px;
+    color: #ff5256;
+}
+
+.makansiangjakarta {
+    position: absolute;
+    top: 563px;
+    left: 984px;
+    color: #ff5256;
+}
+
+.k {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 41px;
+    height: 19px;
+}
+
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 52px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    width: 21px;
+    height: 19px;
+}
+
+.k-parent {
+    position: absolute;
+    top: 436px;
+    left: 377px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-group {
+    position: absolute;
+    top: 478px;
+    left: 377px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-container {
+    position: absolute;
+    top: 520px;
+    left: 377px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.group-div {
+    position: absolute;
+    top: 563px;
+    left: 377px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.m-parent {
+    position: absolute;
+    top: 310px;
+    left: 377px;
+    width: 73px;
+    height: 19px;
+}
+
+.k-parent2 {
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    width: 73px;
+    height: 19px;
+}
+
+.k-parent1 {
+    position: absolute;
+    top: 351px;
+    left: 377px;
+    width: 73px;
+    height: 61px;
+    text-align: right;
+}
+
+.k-parent3 {
+    position: absolute;
+    top: 436px;
+    left: 1290px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.p {
+    margin: 0;
+}
+
+.parent {
+    position: absolute;
+    top: 478px;
+    left: 1290px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-parent4 {
+    position: absolute;
+    top: 520px;
+    left: 1290px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-parent5 {
+    position: absolute;
+    top: 563px;
+    left: 1290px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-parent6 {
+    position: absolute;
+    top: 310px;
+    left: 1290px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-parent7 {
+    position: absolute;
+    top: 351px;
+    left: 1290px;
+    width: 73px;
+    height: 61px;
+    text-align: right;
+}
+
+.k-parent9 {
+    position: absolute;
+    top: 436px;
+    left: 840px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-parent10 {
+    position: absolute;
+    top: 478px;
+    left: 840px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-parent11 {
+    position: absolute;
+    top: 520px;
+    left: 840px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-parent12 {
+    position: absolute;
+    top: 563px;
+    left: 840px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-parent13 {
+    position: absolute;
+    top: 310px;
+    left: 840px;
+    width: 73px;
+    height: 19px;
+    text-align: right;
+}
+
+.k-parent14 {
+    position: absolute;
+    top: 351px;
+    left: 840px;
+    width: 73px;
+    height: 61px;
+    text-align: right;
+}
+
+.daftar-postingan-yang {
+    position: absolute;
+    top: 747px;
+    left: 77px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.32);
+}
+
+.group-child19 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    width: 390px;
+    height: 504px;
+}
+
+.like-dark-icon {
+    width: 31.4px;
+    position: relative;
+    height: 29.8px;
+    object-fit: cover;
+}
+
+.comment-dark-icon {
+    width: 31.4px;
+    position: relative;
+    height: 33.9px;
+    object-fit: cover;
+}
+
+.share-dark-icon {
+    width: 25.7px;
+    position: relative;
+    height: 25.7px;
+    object-fit: cover;
+}
+
+.like-dark-parent {
+    position: absolute;
+    top: 353px;
+    left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9px;
+}
+
+.instagram {
+    position: absolute;
+    top: 393px;
+    left: 17px;
+}
+
+.bekal-untuk-siang {
+    position: absolute;
+    top: 393px;
+    left: 110px;
+    font-size: 17px;
+}
+
+.post-hastag1-icon {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 12px 12px 0px 0px;
+    width: 389px;
+    height: 334px;
+    object-fit: cover;
+}
+
+.lihat-lebih-lanjut-wrapper {
+    position: absolute;
+    top: 442px;
+    left: 124px;
+    box-shadow: 0px 3.207517385482788px 12.83px rgba(255, 82, 86, 0.32);
+    border-radius: 4.81px;
+    background-color: #ff5256;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14.4px;
+    font-size: 14.43px;
+    color: #fff;
+    font-family: 'Product Sans Medium';
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.lihat-lebih-lanjut-wrapper:hover {
+    background-color: #e04f50;
+    box-shadow: 0px 6px 20px rgba(255, 82, 86, 0.5);
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 813px;
+    left: 76px;
+    width: 390px;
+    height: 504px;
+    font-size: 18px;
+}
+
+.group-child20 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    width: 390px;
+    height: 505px;
+}
+
+.share-dark-icon1 {
+    width: 26px;
+    position: relative;
+    height: 26px;
+    object-fit: cover;
+}
+
+.post-hastag2-icon {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 12px 12px 0px 0px;
+    width: 389px;
+    height: 335px;
+    object-fit: cover;
+}
+
+.lihat-lebih-lanjut-container {
+    position: absolute;
+    top: 443px;
+    left: 126px;
+    box-shadow: 0px 3.207517385482788px 12.83px rgba(255, 82, 86, 0.32);
+    border-radius: 4.81px;
+    background-color: #ff5256;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14.4px;
+    font-size: 14.43px;
+    color: #fff;
+    font-family: 'Product Sans Medium';
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.lihat-lebih-lanjut-container-wrapper:hover {
+    background-color: #e04f50;
+    box-shadow: 0px 6px 20px rgba(255, 82, 86, 0.5);
+}
+
+.rectangle-group {
+    position: absolute;
+    top: 812px;
+    left: 523px;
+    width: 390px;
+    height: 505px;
+    font-size: 18px;
+}
+
+.post-hastag3-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px 12px 0px 0px;
+    width: 389px;
+    height: 334px;
+    object-fit: cover;
+}
+
+.group-child22 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px 12px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.81);
+    width: 389px;
+    height: 334px;
+    opacity: 0.7;
+}
+
+.post-hastag3-parent {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 389px;
+    height: 334px;
+}
+
+.div2 {
+    position: absolute;
+    top: 36.77px;
+    left: 0px;
+}
+
+.div3 {
+    position: absolute;
+    top: 36.77px;
+    left: 49.03px;
+}
+
+.div4 {
+    position: absolute;
+    top: 36.77px;
+    left: 100.52px;
+}
+
+.like-icon {
+    width: 27px;
+    position: relative;
+    height: 22.1px;
+    object-fit: cover;
+}
+
+.comment-icon {
+    width: 36.8px;
+    position: relative;
+    height: 31.9px;
+    object-fit: cover;
+}
+
+.share-icon {
+    width: 24.5px;
+    position: relative;
+    height: 24.5px;
+    object-fit: cover;
+}
+
+.like-parent {
+    position: absolute;
+    top: 0px;
+    left: 2.45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.group {
+    position: absolute;
+    top: 139px;
+    left: 135px;
+    width: 122.7px;
+    height: 57.8px;
+    font-size: 17.16px;
+    color: #fff;
+}
+
+.rectangle-container {
+    position: absolute;
+    top: 813px;
+    left: 970px;
+    width: 390px;
+    height: 504px;
+    font-size: 18px;
+}
+
+.hastag-analyzer {
+    width: 100%;
+    position: relative;
+    background-color: #f7f7f7;
+    height: 1468px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Product Sans';
+}
